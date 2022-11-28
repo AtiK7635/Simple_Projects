@@ -633,3 +633,92 @@
 #
 #
 # check_currency()
+
+### Коровы и Быки ###
+
+# import random
+#
+# print("Загадывается случайное четырехзначное число...")
+#
+# num = str(random.randint(1000,9999))
+#
+# user = 0
+#
+# while user != num:
+#     user =                 str(int(input("Попробуйте отгадать число: ")))
+#     if user[0] == num[0]:
+#         print("Бык на месте")
+#     if user[1] == num[1]:
+#         print("Бык на месте")
+#     if user[2] == num[2]:
+#         print("Бык на месте")
+#     if user[3] == num[3]:
+#         print("Бык на месте")
+#     elif user[0] in num[::]:
+#         print("есть Корова")
+#     elif user[1] in num[::]:
+#         print("есть Корова")
+#     elif user[2] in num[::]:
+#         print("есть Корова")
+#     elif user[3] in num[::]:
+#         print("есть Корова")
+#     if user == num:
+#         print(f"Вы угадали число! Было загаданно число {num}")
+#         user == num
+
+# == Найти пропущенную цифру ==#
+
+# def findMissingNumbers(n):
+#     numbers = set(n)
+#     length = len(n)
+#     output = []
+#     for i in range(1, n[-1]):
+#         if i not in numbers:
+#             output.append(i)
+#     return output
+#
+#
+# listOfNumbers = [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 13, 14, 16]
+# print(findMissingNumbers(listOfNumbers))
+
+# == Радужная спираль ==#
+# import turtle
+# from turtle import *
+#
+# turtle.title("rainbow spiral")
+# speed(30)
+# bgcolor("black")
+# r, g, b = 255, 0, 0
+#
+# for i in range(255 * 2):
+#     colormode(255)
+#     if i < 255 // 3:
+#         g += 3
+#     elif i < 255 * 2 // 3:
+#         r -= 3
+#     elif i < 255:
+#         b += 3
+#     elif i < 255 * 4 // 3:
+#         g -= 3
+#     elif i < 255 * 5 // 3:
+#         r += 3
+#     else:
+#         b -= 3
+#     fd(50 + i)
+#     rt(91)
+#     pencolor(r, g, b)
+#
+# done()
+
+#== Таблица ==#
+
+# from prettytable import PrettyTable
+#
+# table = PrettyTable()
+#
+# table.field_names = ['Name', 'Age', 'City']
+# table.add_row(['Nikita', 21, 'Moscow'])
+# table.add_row(['Elena', 20, 'Krasnodar'])
+# table.add_row(['Anatoly', 21, 'Voronezh'])
+#
+# print(table)
