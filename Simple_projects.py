@@ -612,6 +612,7 @@
 
 #== Курс валют ==#
 
+
 # import requests
 # from bs4 import BeautifulSoup
 # import time
@@ -634,7 +635,9 @@
 #
 # check_currency()
 
-### Коровы и Быки ###
+
+#== Коровы и Быки ==#
+
 
 # import random
 #
